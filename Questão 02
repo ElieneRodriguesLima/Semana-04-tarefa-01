@@ -1,0 +1,19 @@
+dia01 = int(input('Informe um dia: '))
+mes01 = int(input('Informe um mês: '))
+ano01 = int(input('Informe um ano: '))
+
+dia02 = int(input('\nInforme um dia: '))
+mes02 = int(input('Informe um mês: '))
+ano02 = int(input('Informe um ano: '))
+
+data01 = '{:02d}/{:02d}/{}'.format(dia01, mes01, ano01)
+data02 = '{:02d}/{:02d}/{}'.format(dia02, mes02, ano02)
+
+print(f'\nA primeira data informada é {data01}.')
+print(f'A segunda data informada é {data02}.')
+
+if ano01 > ano02:
+    print(f'\nPortanto a data mais recente informada é {data01}.')
+
+else:
+    print(f'\nPortanto a data mais recente informada é {data02}.')
