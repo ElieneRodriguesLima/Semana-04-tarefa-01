@@ -1,0 +1,18 @@
+dia = int(input('Informe qual o dia atual: '))
+mes = int(input('Informe qual o mês atual: '))
+ano = int(input('Informe qual o ano atual: '))
+dia_de_nascimento = int(input('Informe o seu dia de nascimento: '))
+mes_de_nascimento = int(input('Informe o seu mês de nascimento: '))
+ano_de_nascimento = int(input('Informe o seu ano de nascimento: '))
+
+data_atual = '{:02d}/{:02d}/{}'.format(dia, mes, ano)
+data_de_nascimento = '{:02d}/{:02d}/{}'.format(dia_de_nascimento, mes_de_nascimento, ano_de_nascimento)
+
+d1 = ano
+d2 = ano_de_nascimento
+
+idade = abs(d1 - d2)
+
+print(f'\nA data informada é {data_atual}.')
+print(f'A sua data de nascimento é {data_de_nascimento}.')
+print(f'\nPortanto você tem {idade} anos de idade.')
